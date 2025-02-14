@@ -5,7 +5,9 @@ import axios from "axios";
 const token = localStorage.getItem("token");
 
 export const authenticatedInstance = axios.create({
-  baseURL: "http://localhost:3000",
+  // baseURL: "http://localhost:3000",
+  baseURL: "https://shopvista-backend.onrender.com",
+
   headers: {
     Authorization: `Bearer ${token}`,
   },
@@ -13,7 +15,8 @@ export const authenticatedInstance = axios.create({
 
 // Create an Axios instance without token
 export const unauthenticatedInstance = axios.create({
-  baseURL: "http://localhost:3000",
+  // baseURL: "http://localhost:3000",
+  baseURL: "https://shopvista-backend.onrender.com",
   headers: {
     "Content-Type": "application/x-www-form-urlencoded",
   },
