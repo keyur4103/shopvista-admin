@@ -30,7 +30,7 @@ const ProductTable = () => {
     queryFn: () => allProducts(query, page),
     refetchOnWindowFocus: false,
     // select: (data) => data?.reverse(),
-  }); 
+  });
 
   useEffect(() => {
     const dataToExport = data?.products.map((product) => ({
@@ -270,7 +270,7 @@ const ProductTable = () => {
                       <tr
                         className="hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
                         key={index}
-                        onClick={() => navigate(`/product/${product.slug}`)}
+                        // onClick={() => navigate(`/product/${product.slug}`)}
                       >
                         <td className=" p-4  space-x-6 whitespace-nowrap">
                           <div className="text-sm font-normal text-gray-500 dark:text-gray-400">

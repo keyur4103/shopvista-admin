@@ -8,14 +8,15 @@ import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { setLogin } from "../redux/authSlice";
 import { adminLogin } from "../services/Auth/authAPI";
+import logo from "../assets/shopping-bag.png";
 
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const isLoggedIn =
-  useSelector((state) => state.token) || localStorage.getItem("token");
-  
-  console.log("🚀 ~ Login ~ isLoggedIn:", isLoggedIn)
+    useSelector((state) => state.token) || localStorage.getItem("token");
+
+  console.log("🚀 ~ Login ~ isLoggedIn:", isLoggedIn);
   useEffect(() => {
     if (isLoggedIn) {
       navigate("/");
@@ -66,7 +67,7 @@ const Login = () => {
       <section className="bg-gray-50 dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <div className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-            <img className="w-8 h-8 mr-2" src="/logo.png" alt="logo" />
+            <img className="w-8 h-8 mr-2" src={logo} alt="logo" />
             ShopVista Admin
           </div>
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">

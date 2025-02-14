@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setLogout } from "../../redux/authSlice";
 import { useState } from "react";
+import logo from "../../assets/shopping-bag.png";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -48,7 +49,7 @@ const Header = () => {
               </svg>
             </button>
             <Link to="/admin/blog" className="flex ms-2 md:me-24">
-              <img src="/logo.png" className="h-8 me-3" alt="FlowBite Logo" />
+              <img src={logo} className="h-8 me-3" alt="FlowBite Logo" />
               <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
                 ShopVista Admin
               </span>

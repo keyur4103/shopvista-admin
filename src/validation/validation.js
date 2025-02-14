@@ -46,8 +46,8 @@ export const addProductValidation = Yup.object().shape({
     .typeError("Price must be a number")
     .positive("Price must be a positive number")
     .required("Price is required"),
-  color: Yup.string().required("Color is required"),
-  size: Yup.string().required("Size is required"),
+  // color: Yup.string().required("Color is required"),
+  // size: Yup.string().required("Size is required"),
   coverImage: Yup.mixed()
     .test("fileFormat", "Only .jpg files are allowed", (value) => {
       return value && value[0]?.type === "image/jpeg";
@@ -70,8 +70,8 @@ export const updateProductValidation = Yup.object().shape({
     .typeError("Price must be a number")
     .positive("Price must be a positive number")
     .required("Price is required"),
-  color: Yup.string().required("Color is required"),
-  size: Yup.string().required("Size is required"),
+  // color: Yup.string().required("Color is required"),
+  // size: Yup.string().required("Size is required"),
   // coverImage: Yup
   //   .mixed()
   //   .test("fileFormat", "Only .jpg files are allowed", (value) => {

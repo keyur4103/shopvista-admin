@@ -2,7 +2,7 @@ import { unauthenticatedInstance } from "../../utils/axios-instance";
 
 export const adminLogin = async (data) => {
   try {
-    const response = await unauthenticatedInstance.post("/login", data);
+    const response = await unauthenticatedInstance.post("login", data);
     // console.log("response: ", response);
     return response;
   } catch (error) {
