@@ -97,7 +97,7 @@ const Login = () => {
                     text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500`}
                     placeholder="name@company.com"
                     required=""
-                    defaultValue={"admin@email.com"}
+                    defaultValue={"kfataniya637@rku.ac.in"}
                   />
                   {errors.email && (
                     <p className="text-red-500 text-sm">
@@ -123,7 +123,7 @@ const Login = () => {
                     text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500`}
                     placeholder="••••••••"
                     required=""
-                    defaultValue={"123456"}
+                    defaultValue={"K@#yyu4103"}
                   />
                   {errors.password && (
                     <p className="text-red-500 text-sm">
